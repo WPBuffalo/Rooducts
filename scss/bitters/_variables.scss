@@ -1,0 +1,50 @@
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$sans-serif: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "Lucida Serif", Lucida, Georgia, serif;
+$alt-sans-serif: "Nitro A", "Nitro B";
+
+
+$base-font-family: $sans-serif;
+$header-font-family: $sans-serif;
+$alt-header-font-family: $alt-sans-serif;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.5;
+$base-border-radius: em(3);
+
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+
+$blue: #477DCA;
+$dark-blue: #07284c;
+
+$yellow: #ead22f;
+
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #efefef;
+$light-red: #ff4455;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+// Body Color
+$base-body-color: white;
+
+//  Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $blue;
+
+//  Text Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// Border color
+$base-border-color: $light-gray;
+
+// Flash Colors
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;

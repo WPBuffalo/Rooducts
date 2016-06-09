@@ -1,0 +1,777 @@
+/*!
+Theme Name: RooDucts
+Theme URI: http://rooducts.com
+Version: 1.0
+Author: Andy Staple
+*/
+/*
+===========================
+CONTENTS:
+
+00 Imports of Partials
+01 Sensible defaults
+02 Typography
+03 Main
+===========================
+*/
+/* line 1, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+body {
+  color: #333;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em; }
+
+/* line 9, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 16, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+h1 {
+  font-size: 2.25em; }
+
+/* line 20, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 24, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+h3 {
+  font-size: 1.75em; }
+
+/* line 28, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+h4 {
+  font-size: 1.5em; }
+
+/* line 32, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 36, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 40, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 44, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+a {
+  color: #477DCA;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear; }
+  /* line 49, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+  a:hover {
+    color: #2c5999; }
+  /* line 53, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+/* line 59, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+hr {
+  border-bottom: 1px solid #efefef;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 67, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 72, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #efefef;
+  cursor: help; }
+
+/* line 77, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+address {
+  display: block;
+  margin: 0 0 0.75em; }
+
+/* line 82, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+hgroup {
+  margin-bottom: 0.75em; }
+
+/* line 86, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+del {
+  color: #595959; }
+
+/* line 90, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+blockquote {
+  border-left: 2px solid #efefef;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 97, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 101, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_typography.scss */
+  cite:before {
+    content: '\2014 \00A0'; }
+
+/* line 10, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+fieldset {
+  background: white;
+  border: 1px solid #efefef;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 19, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em; }
+
+/* line 25, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 29, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 33, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 36, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+textarea,
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
+select[multiple=multiple] {
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #efefef;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 51, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+  textarea:hover,
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
+  select[multiple=multiple]:hover {
+    border-color: #d5d5d5; }
+  /* line 55, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+  textarea:focus,
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477DCA;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 62, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 66, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 70, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 75, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+input[type="file"] {
+  width: 100%; }
+
+/* line 79, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em; }
+
+/* line 86, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_forms.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* line 1, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_tables.scss */
+th {
+  border-bottom: 1px solid #c9c9c9;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_tables.scss */
+td {
+  border-bottom: 1px solid #efefef;
+  padding: 0.75em 0; }
+
+/* line 20, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 1, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* line 19, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_lists.scss */
+dl {
+  line-height: 1.5em;
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/bitters/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 4, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 11, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+/* line 3, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 8, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+/* line 13, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+/* line 18, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+/* line 23, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+/* line 28, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 32, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+/* line 37, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 43, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+/* line 51, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 55, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+/* line 59, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+/* line 63, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+/* line 72, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+/* line 80, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+/* line 88, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/scss/partials/_wp.scss */
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+/* line 31, stdin */
+.group:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: ".";
+  visibility: hidden; }
+
+/* line 39, stdin */
+body {
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url(images/header-bg.jpg) top center no-repeat #efefef;
+  line-height: 1.5;
+  padding-top: 0px;
+  margin: 0; }
+
+/* line 47, stdin */
+img {
+  max-width: 100%; }
+
+/* line 50, stdin */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+/* line 54, stdin */
+::-moz-selection {
+  background: #f66;
+  color: #fff; }
+
+/* line 55, stdin */
+::selection {
+  background: #f66;
+  color: #fff; }
+
+/* line 56, stdin */
+.hide, #skipLink {
+  display: none; }
+
+/* line 66, stdin */
+.masthead {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0; }
+
+/* line 70, stdin */
+.header-container {
+  max-width: 66.875em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto; }
+  /* line 20, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .header-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 76, stdin */
+.logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding: 1rem;
+  max-width: 305px; }
+  /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .logo:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 12.5em) and (max-width: 53.75em) {
+    /* line 76, stdin */
+    .logo {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 47.58542%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .logo:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 10px) and (max-width: 32.5em) {
+    /* line 76, stdin */
+    .logo {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .logo:last-child {
+        margin-right: 0; } }
+
+/* line 88, stdin */
+#mega-menu-wrap-primary {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  #mega-menu-wrap-primary:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 12.5em) and (max-width: 53.75em) {
+    /* line 88, stdin */
+    #mega-menu-wrap-primary {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 47.58542%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      #mega-menu-wrap-primary:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 10px) and (max-width: 32.5em) {
+    /* line 88, stdin */
+    #mega-menu-wrap-primary {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      #mega-menu-wrap-primary:last-child {
+        margin-right: 0; } }
+
+/* line 101, stdin */
+.content-wrap {
+  max-width: 66.875em;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 2rem; }
+  /* line 20, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .content-wrap::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 106, stdin */
+  .content-wrap.content-wrap-home {
+    padding: 0; }
+
+/* line 110, stdin */
+.homepage-content {
+  max-width: 66.875em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem; }
+  /* line 20, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .homepage-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 113, stdin */
+  .homepage-content h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 140px;
+    line-height: 42px;
+    font-family: "Nitro A", "Nitro B";
+    text-shadow: 2px 2px 0px #152b49; }
+    /* line 121, stdin */
+    .homepage-content h1:before {
+      content: "\00a0"; }
+  /* line 125, stdin */
+  .homepage-content p {
+    color: #f4e266;
+    font-weight: 700; }
+
+/* line 130, stdin */
+.article-wrap {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .article-wrap:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 12.5em) and (max-width: 53.75em) {
+    /* line 130, stdin */
+    .article-wrap {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 65.05695%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .article-wrap:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 10px) and (max-width: 32.5em) {
+    /* line 130, stdin */
+    .article-wrap {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .article-wrap:last-child {
+        margin-right: 0; } }
+  /* line 140, stdin */
+  .no-sidebar .article-wrap {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .no-sidebar .article-wrap:last-child {
+      margin-right: 0; }
+
+/* line 145, stdin */
+.main-sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background: #efefef;
+  padding: 20px; }
+  /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .main-sidebar:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 12.5em) and (max-width: 53.75em) {
+    /* line 145, stdin */
+    .main-sidebar {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 30.11389%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .main-sidebar:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 10px) and (max-width: 32.5em) {
+    /* line 145, stdin */
+    .main-sidebar {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .main-sidebar:last-child {
+        margin-right: 0; } }
+
+/* line 159, stdin */
+.home-ribbon {
+  padding: 2rem; }
+
+/* line 162, stdin */
+h4.home-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #07284c;
+  text-align: center; }
+
+/* line 20, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.browse-vehicles::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/* line 174, stdin */
+.supported-models li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  font-size: 0.8125rem; }
+  /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .supported-models li:last-child {
+    margin-right: 0; }
+  /* line 178, stdin */
+  .supported-models li:nth-child(6n) {
+    margin-right: 0; }
+  /* line 181, stdin */
+  .supported-models li a {
+    text-decoration: none; }
+    /* line 183, stdin */
+    .supported-models li a:hover {
+      text-decoration: underline; }
+  @media screen and (min-width: 12.5em) and (max-width: 53.75em) {
+    /* line 174, stdin */
+    .supported-models li {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 12.64237%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .supported-models li:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 10px) and (max-width: 32.5em) {
+    /* line 174, stdin */
+    .supported-models li {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 46.28851%; }
+      /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .supported-models li:last-child {
+        margin-right: 0; }
+      /* line 195, stdin */
+      .supported-models li:nth-child(2n) {
+        margin-right: 0; } }
+
+/* line 20, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.supported-models::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/* line 202, stdin */
+.featured-cars {
+  background: #333; }
+  /* line 204, stdin */
+  .featured-cars h4.home-heading {
+    color: #ead22f; }
+  /* line 208, stdin */
+  .featured-cars ul.featured-cars-list li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .featured-cars ul.featured-cars-list li:last-child {
+      margin-right: 0; }
+    /* line 210, stdin */
+    .featured-cars ul.featured-cars-list li:nth-child(4n) {
+      margin-right: 0; }
+    @media screen and (min-width: 10px) and (max-width: 32.5em) {
+      /* line 208, stdin */
+      .featured-cars ul.featured-cars-list li {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 46.28851%; }
+        /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+        .featured-cars ul.featured-cars-list li:last-child {
+          margin-right: 0; }
+        /* line 215, stdin */
+        .featured-cars ul.featured-cars-list li:nth-child(2n) {
+          margin-right: 0; } }
+  /* line 20, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .featured-cars ul.featured-cars-list::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 229, stdin */
+.product-list .padder {
+  padding: 1rem; }
+
+/* line 232, stdin */
+.product-list li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background: #07284c;
+  color: #ffffff; }
+  /* line 89, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .product-list li:last-child {
+    margin-right: 0; }
+  /* line 239, stdin */
+  .product-list li h2 {
+    font-size: 1.125rem;
+    color: #ffffff; }
+    /* line 242, stdin */
+    .product-list li h2 a {
+      color: #f1e174; }
+
+/* line 249, stdin */
+.q_and_a {
+  border-top: 1px solid #efefef;
+  line-height: 1.25; }
+  /* line 251, stdin */
+  .q_and_a h4 {
+    padding: 1.5rem 0 1rem 0; }
+  /* line 254, stdin */
+  .q_and_a em {
+    display: inline-block;
+    font-style: italic;
+    color: #999; }
+  /* line 260, stdin */
+  .q_and_a .question {
+    font-style: italic; }
+  /* line 263, stdin */
+  .q_and_a .answer {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: gray; }
+
+/* line 272, stdin */
+#mega-menu-wrap-primary {
+  clear: none; }
+
+/* line 297, stdin */
+.site-info {
+  max-width: 66.875em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 1em auto; }
+  /* line 20, /Users/Andy/Dropbox/htdocs/rooducts/wp-content/themes/rooducts/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .site-info::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* Retina Display */

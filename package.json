@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-watch": "^4.2.4",
+    "node-bourbon": "^4.2.1-beta1",
+    "node-neat": "^1.7.1-beta1"
+  }
+}

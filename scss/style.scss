@@ -1,0 +1,305 @@
+/*!
+Theme Name: RooDucts
+Theme URI: http://rooducts.com
+Version: 1.0
+Author: Andy Staple
+*/
+
+/*
+===========================
+CONTENTS:
+
+00 Imports of Partials
+01 Sensible defaults
+02 Typography
+03 Main
+===========================
+*/
+
+//
+// 00 Imports
+//
+@import "bourbon";
+@import "bitters/bitters";
+@import "neat";
+@import "partials/wp";
+
+
+//
+// 01 Sensible defaults
+//
+.group:after {
+	// For Clearing Floats
+	display:block;
+	height:0;
+	clear:both;
+	content:".";
+	visibility:hidden;
+}
+body {
+	font-family: $base-font-family;
+	background: url(images/header-bg.jpg) top center no-repeat $light-gray;
+	// font mixin for Rem w/px fallback (see _vars partial for more info)
+	line-height: 1.5;
+	padding-top: 0px;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font-family;
+	font-weight:700;
+}
+::-moz-selection 	{ background:#f66; color:#fff; }
+::selection 		{ background:#f66; color:#fff; }
+.hide, #skipLink { display: none; }
+
+body, input, textarea {}
+
+
+//
+// 03 General (Mobile First)
+//
+
+// Header
+.masthead {
+	background: rgba(0,0,0,.5);
+	padding: 0;
+}
+.header-container {
+	@include outer-container;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.logo {
+	@include span-columns(3);
+	padding: 1rem;
+	max-width: 305px;
+
+	@include media($medium) {
+		@include span-columns(3);
+	}
+	@include media($small) {
+		@include span-columns(4);
+	}
+}
+#mega-menu-wrap-primary {
+	@include span-columns(9);
+
+	@include media($medium) {
+		@include span-columns(3);
+	}
+	@include media($small) {
+		@include span-columns(4);
+	}
+
+}
+
+// Main Body
+.content-wrap {
+	@include outer-container;
+	background: #ffffff;
+	margin: 0 auto;
+	padding: 2rem;
+	&.content-wrap-home {
+		padding: 0;
+	}
+}
+.homepage-content {
+	@include outer-container;
+	padding: 1.5rem;
+	h1 {
+		color: #ffffff;
+		font-size: 40px;
+		font-weight: 400;
+		padding-top: 140px;
+		line-height: 42px;
+		font-family: $alt-header-font-family;
+		text-shadow: 2px 2px 0px darken($blue, 35%);
+		&:before {
+			content: "\00a0";
+		}
+	}
+	p {
+		color: #f4e266;
+		font-weight: 700;
+	}
+}
+.article-wrap {
+	@include span-columns(8);
+
+	@include media($medium) {
+		@include span-columns(4);
+	}
+	@include media($small) {
+		@include span-columns(4);
+	}
+
+	.no-sidebar & {
+		@include span-columns(12);
+	}
+}
+
+.main-sidebar {
+	@include span-columns(4);
+	background: $light-gray;
+	padding: 20px;
+
+	@include media($medium) {
+		@include span-columns(2);
+	}
+	@include media($small) {
+		@include span-columns(4);
+	}
+}
+
+// Homepage Specifics
+.home-ribbon {
+	padding: 2rem;
+}
+h4.home-heading {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: $dark-blue;
+	text-align: center;
+}
+.browse-vehicles {
+	@include clearfix;
+	h4.home-heading {
+	}
+}
+.supported-models {
+	li {
+		@include span-columns(2);
+		font-size: 0.8125rem;
+
+		&:nth-child(6n) {
+			margin-right: 0;
+		}
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		@include media($medium) {
+			@include span-columns(1);
+			// &:nth-child(2n) {
+			// 	margin-right: 0;
+			// }
+		}
+		@include media($small) {
+			@include span-columns(2);
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+	@include clearfix;
+}
+.featured-cars {
+	background: $dark-gray;
+	h4.home-heading {
+		color: $yellow;
+	}
+	ul.featured-cars-list {
+		li {
+			@include span-columns(3);
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+			@include media($small) {
+				@include span-columns(2);
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+			}
+		}
+		@include clearfix;
+	}
+}
+.home-news {
+
+}
+
+// Product Listing Pages (Categories/Tags)
+.product-list {
+	.padder {
+		padding: 1rem;
+	}
+	li {
+		@include span-columns(4);
+		background: $dark-blue;
+		color: #ffffff;
+		img.size-medium.wp-post-image {
+
+		}
+		h2 {
+			font-size: 1.125rem;
+			color: #ffffff;
+			a {
+				color: lighten($yellow, 15%);
+			}
+		}
+	}
+}
+// Single Product Page
+.q_and_a {
+	border-top: 1px solid $light-gray;
+	h4 {
+		padding: 1.5rem 0 1rem 0;
+	}
+	em {
+		display: inline-block;
+		font-style: italic;
+		color: $medium-gray;
+	}
+	line-height: 1.25;
+	.question {
+		font-style: italic;
+	}
+	.answer {
+		margin-top: 0;
+		margin-bottom: 1rem;
+		font-weight: 400;
+		color: darken($medium-gray, 10%);
+	}
+}
+
+// Main Menu Overrides
+#mega-menu-wrap-primary {
+	clear: none;
+
+}
+// #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item
+// // #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a
+// {
+// 	-webkit-transform: skewX(-10deg);
+// 	 -moz-transform: skewX(-10deg);
+// 		-ms-transform: skewX(-10deg);
+// 		 -o-transform: skewX(-10deg);
+// 				transform: skewX(-10deg);
+// }
+// // #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a {
+// // }
+// #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > * {
+// 	-webkit-transform: skewX(10deg);
+// 		 -moz-transform: skewX(10deg);
+// 			-ms-transform: skewX(10deg);
+// 			 -o-transform: skewX(10deg);
+// 					transform: skewX(10deg);
+// }
+
+// Footer
+.site-footer {}
+.site-info {
+	@include outer-container;
+	margin: 1em auto;
+}
+
+
+/* Retina Display */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+}
